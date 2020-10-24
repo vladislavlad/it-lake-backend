@@ -1,0 +1,11 @@
+version: '2'
+services:
+  postgres:
+    image: postgres:13.0-alpine
+    environment:
+      POSTGRES_USER: it-lake
+      POSTGRES_PASSWORD: it-lake
+      POSTGRES_DB: it-lake
+    ports:
+      - 5432:5432
+    

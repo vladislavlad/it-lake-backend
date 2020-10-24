@@ -1,0 +1,9 @@
+spring:
+  datasource:
+    username: it-lake
+    password: it-lake
+    url: jdbc:postgresql://localhost:5432/it-lake
+  data:
+    rest:
+      base-path: "/api/v1"
+      defaultMediaType: "application/prs.hal-forms+json"
