@@ -1,5 +1,6 @@
 ﻿html, body{
   background-color: #d0dede;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
 
 #center-wrapper {
@@ -16,8 +17,8 @@
 .tech-list {
   text-align: left;
   padding-top: 2em;
-  padding-left: 40%;
-  padding-right: 40%;
+  padding-left: 35%;
+  padding-right: 35%;
 }
 
 table {
