@@ -11,7 +11,7 @@ import org.springframework.web.servlet.ModelAndView
 @Controller
 class MainController(private val api: TechTypeApi) {
 
-    @GetMapping("/main")
+    @GetMapping(path = ["/","/main"])
     fun main(): ModelAndView {
         val list = api.getList(Pageable.unpaged())
         return showTemplate(MAIN, mapOf("tech" to list))
