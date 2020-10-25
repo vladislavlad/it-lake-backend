@@ -57,5 +57,4 @@ val compileKotlin: KotlinCompile by tasks
 compileKotlin.kotlinOptions {
     languageVersion = "1.4"
     jvmTarget="11"
-    freeCompilerArgs = listOf("-Xjvm-default=all")
 }

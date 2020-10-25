@@ -1,0 +1,14 @@
+﻿html, body{
+  background-color: #d0dede;
+}
+
+#center-wrapper {
+  text-align: center;
+  color: #275867;
+}
+
+.tech-list {
+  text-align: left;
+  padding-left: 40%;
+  padding-right: 40%;
+}

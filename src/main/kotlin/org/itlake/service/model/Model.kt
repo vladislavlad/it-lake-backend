@@ -1,5 +1,5 @@
 package org.itlake.service.model
 
-interface Model<T> {
-    var id: Long
+interface Model<ID> {
+    var id: ID
 }
