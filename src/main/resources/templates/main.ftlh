@@ -18,13 +18,43 @@
 <div id="center-wrapper">
     <h1>IT Lake</h1>
 
-    <div class="tech-list">
+    <div class="tech-type-list">
         <h2>Tech types:</h2>
         <ul>
-            <#list tech as t>
+            <#list types as t>
                 <li>${t.name} <a style="color: #${t.color}">▇</a></li>
             </#list>
         </ul>
+    </div>
+
+    <br/>
+
+    <div class="tech-list">
+        <h2>Technologies:</h2>
+        <table>
+            <tbody>
+            <tr>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Type</th>
+                <th>Parent</th>
+            </tr>
+            <#list techs as t>
+                <tr>
+                    <td>${t.name}</td>
+                    <td>${t.description}</td>
+                    <td><a style="color: #${t.type.color}"> ${t.type.name} </a></td>
+                    <td>
+                        <#if t.parent??>
+                            ${t.parent.name}
+                        <#else>
+                            -
+                        </#if>
+                    </td>
+                </tr>
+            </#list>
+            </tbody>
+        </table>
     </div>
 </div>
 

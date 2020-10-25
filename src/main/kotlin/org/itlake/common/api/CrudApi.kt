@@ -1,12 +1,13 @@
-package org.itlake.service.api
+package org.itlake.common.api
 
+import org.itlake.common.service.CrudService
 import org.itlake.service.model.Model
-import org.itlake.service.service.CrudService
 import org.modelmapper.ModelMapper
 import org.springframework.core.ResolvableType
 import org.springframework.core.ResolvableTypeProvider
 import org.springframework.data.domain.Pageable
 
+//TODO separate to Interface and Abstract Class
 interface CrudApi<DTO_ID, IN, OUT, ID, E : Model<ID>> : ResolvableTypeProvider {
     val mapper: ModelMapper
     val service: CrudService<ID, E>

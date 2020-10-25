@@ -1,4 +1,4 @@
-package org.itlake.service.service
+package org.itlake.common.service
 
 import org.itlake.service.model.Model
 import org.springframework.data.domain.Pageable
