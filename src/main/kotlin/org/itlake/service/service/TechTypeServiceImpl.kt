@@ -7,5 +7,5 @@ import org.springframework.stereotype.Service
 
 @Service
 class TechTypeServiceImpl(
-        private val repository: TechTypeRepository
+    private val repository: TechTypeRepository
 ) : ACrudService<Long, TechType>(repository), TechTypeService

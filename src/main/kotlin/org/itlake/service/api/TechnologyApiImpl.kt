@@ -10,11 +10,11 @@ import org.springframework.stereotype.Component
 
 @Component
 class TechnologyApiImpl(
-        override val mapper: ModelMapper,
-        override val service: TechnologyService,
-        private val typeService: TechTypeService,
-        override val outDtoClass: Class<TechnologyOutDto> = TechnologyOutDto::class.java,
-        override val entityClass: Class<Technology> = Technology::class.java,
+    override val mapper: ModelMapper,
+    override val service: TechnologyService,
+    private val typeService: TechTypeService,
+    override val outDtoClass: Class<TechnologyOutDto> = TechnologyOutDto::class.java,
+    override val entityClass: Class<Technology> = Technology::class.java,
 ) : TechnologyApi {
 
     override fun create(dto: TechnologyInDto): TechnologyOutDto {

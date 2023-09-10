@@ -4,8 +4,8 @@ import org.itlake.service.model.Model
 import org.springframework.data.domain.Pageable
 import org.springframework.data.repository.PagingAndSortingRepository
 
-abstract class ACrudService<ID, E : Model<ID>>(
-        private val repository: PagingAndSortingRepository<E, ID>,
+abstract class ACrudService<ID : Any, E : Model<ID>>(
+    private val repository: PagingAndSortingRepository<E, ID>,
 ) : CrudService<ID, E> {
 
     override fun getById(id: ID): E {

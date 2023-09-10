@@ -8,8 +8,8 @@ import org.springframework.stereotype.Component
 
 @Component
 class TechTypeApiImpl(
-        override val mapper: ModelMapper,
-        override val service: TechTypeServiceImpl,
-        override val entityClass: Class<TechType> = TechType::class.java,
-        override val outDtoClass: Class<TechTypeOutDto> = TechTypeOutDto::class.java,
+    override val mapper: ModelMapper,
+    override val service: TechTypeServiceImpl,
+    override val entityClass: Class<TechType> = TechType::class.java,
+    override val outDtoClass: Class<TechTypeOutDto> = TechTypeOutDto::class.java,
 ) : TechTypeApi

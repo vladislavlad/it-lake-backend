@@ -7,5 +7,5 @@ import org.springframework.stereotype.Service
 
 @Service
 class TechnologyServiceImpl(
-        private val repository: TechnologyRepository
+    private val repository: TechnologyRepository
 ) : ACrudService<Long, Technology>(repository), TechnologyService

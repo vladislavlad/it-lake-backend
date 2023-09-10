@@ -11,8 +11,8 @@ import org.springframework.web.servlet.ModelAndView
 
 @Controller
 class MainController(
-        private val typesApi: TechTypeApi,
-        private val techsApi: TechnologyApi
+    private val typesApi: TechTypeApi,
+    private val techsApi: TechnologyApi
 ) {
 
     @GetMapping(path = ["/", "/index", "/main"])

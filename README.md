@@ -15,16 +15,16 @@ gradle bootRun
 ```
 Explore
 ```http request
-GET localhost:8080/
+GET http://localhost:8080/
 ```
 
 INSTANCES
 ---------
-Dev stand: https://it-lake.herokuapp.com/
+Dev stand: 
 
 TODO
 ---------
-- [x] CD with deploy to Heroku after merge to master~~
+- [x] ~~CD with deploy to Heroku after merge to master~~ (Heroku unavailable)
 - [ ] CI with tests, sonar
 - [ ] Swagger Spec
 - [ ] Authorization

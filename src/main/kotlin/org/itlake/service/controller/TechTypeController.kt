@@ -15,11 +15,12 @@ import org.springframework.web.bind.annotation.RequestMapping
 import org.springframework.web.bind.annotation.RequestParam
 import org.springframework.web.bind.annotation.ResponseStatus
 import org.springframework.web.bind.annotation.RestController
+import javax.validation.Valid
 
 @RestController
 @RequestMapping("/api/v1/techTypes")
 class TechTypeController(
-        private val api: TechTypeApi
+    private val api: TechTypeApi
 ) {
 
     @GetMapping
@@ -32,12 +33,14 @@ class TechTypeController(
             api.getById(id)
 
     @PostMapping
-    fun create(@RequestBody dto: TechTypeInDto): TechTypeOutDto =
+    fun create(@Valid @RequestBody dto: TechTypeInDto): TechTypeOutDto =
             api.create(dto)
 
     @PatchMapping("/{id}")
-    fun update(@PathVariable id: Long,
-               @RequestBody dto: TechTypeInDto): TechTypeOutDto =
+    fun update(
+        @PathVariable id: Long,
+        @Valid @RequestBody dto: TechTypeInDto
+    ): TechTypeOutDto =
             api.update(id, dto)
 
     @DeleteMapping("/{id}")
